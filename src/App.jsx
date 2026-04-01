@@ -406,7 +406,7 @@ function HomePage({ setPage, lang }) {
       <section style={{ minHeight: "100vh", display: "flex", alignItems: "flex-end", padding: "0 48px 80px", position: "relative", overflow: "hidden" }}>
         <div className="hero-grad" style={{ position: "absolute", inset: 0, background: "linear-gradient(to right, var(--black) 35%, transparent 100%)", zIndex: 1 }} />
         <div className="hero-img" style={{ position: "absolute", right: 0, top: 0, width: "55%", height: "100%", background: "var(--off-black)", overflow: "hidden", zIndex: 0 }}>
-          <img src="/public/hero-revy.png" alt="Revy Wild" style={{ width: "100%", height: "100%", objectFit: "cover", objectPosition: "center", filter: "grayscale(100%) contrast(1.05)", opacity: 0.7, transform: heroLoaded ? "scale(1)" : "scale(1.06)", transition: "transform 3s cubic-bezier(0.19,1,0.22,1), opacity 2s ease" }} />
+          <img src="/hero-revy.png" alt="Revy Wild" style={{ width: "100%", height: "100%", objectFit: "cover", objectPosition: "center", filter: "grayscale(100%) contrast(1.05)", opacity: 0.7, transform: heroLoaded ? "scale(1)" : "scale(1.06)", transition: "transform 3s cubic-bezier(0.19,1,0.22,1), opacity 2s ease" }} />
         </div>
         <div className="hero-copy" style={{ position: "relative", zIndex: 2, maxWidth: 680 }}>
           <div style={{ opacity: heroLoaded ? 1 : 0, transform: heroLoaded ? "translateY(0)" : "translateY(30px)", transition: "opacity 1.4s cubic-bezier(0.19,1,0.22,1) 0.3s, transform 1.4s cubic-bezier(0.19,1,0.22,1) 0.3s" }}>
@@ -479,7 +479,7 @@ function TokyoPage({ setPage, lang }) {
     <div className="page-wrap">
       <section style={{ minHeight: "80vh", display: "flex", alignItems: "flex-end", padding: "0 48px 80px", background: "var(--off-black)", position: "relative", overflow: "hidden" }}>
         <div style={{ position: "absolute", inset: 0, background: "linear-gradient(to top, var(--off-black) 45%, transparent)" }} />
-        <img src="/public/tokyo.png" alt="Tokyo" style={{ position: "absolute", inset: 0, width: "100%", height: "100%", objectFit: "cover", filter: "grayscale(100%)", opacity: 0.2 }} />
+        <img src="/tokyo.png" alt="Tokyo" style={{ position: "absolute", inset: 0, width: "100%", height: "100%", objectFit: "cover", filter: "grayscale(100%)", opacity: 0.2 }} />
         <div style={{ position: "relative", zIndex: 2, maxWidth: 680 }}>
           <span style={{ fontSize: 9, letterSpacing: "0.4em", color: "var(--muted)", textTransform: "uppercase", display: "block", marginBottom: 32 }}>{t.eyebrow}</span>
           <h1 className="serif" style={{ fontSize: "clamp(44px, 8vw, 96px)", fontWeight: 300, lineHeight: 0.95, marginBottom: 32 }}>
@@ -528,7 +528,7 @@ function IzakayaPage({ setPage, lang }) {
     <div className="page-wrap">
       <section style={{ minHeight: "100vh", display: "flex", alignItems: "flex-end", padding: "0 48px 80px", background: "var(--off-black)", position: "relative", overflow: "hidden" }}>
         <div style={{ position: "absolute", inset: 0, background: "linear-gradient(to top, var(--off-black) 50%, transparent)" }} />
-        <img src="/public/izakaya.png" alt="Izakaya Tokyo" style={{ position: "absolute", inset: 0, width: "100%", height: "100%", objectFit: "cover", filter: "grayscale(100%)", opacity: 0.25 }} />
+        <img src="/izakaya.png" alt="Izakaya Tokyo" style={{ position: "absolute", inset: 0, width: "100%", height: "100%", objectFit: "cover", filter: "grayscale(100%)", opacity: 0.25 }} />
         <div style={{ position: "relative", zIndex: 2, maxWidth: 680 }}>
           <span style={{ fontSize: 9, letterSpacing: "0.4em", color: "var(--muted)", textTransform: "uppercase", display: "block", marginBottom: 32 }}>{t.eyebrow}</span>
           <h1 className="serif" style={{ fontSize: "clamp(40px, 7vw, 88px)", fontWeight: 300, lineHeight: 0.95, marginBottom: 32 }}>
@@ -601,7 +601,7 @@ function ChefDayPage({ setPage, lang }) {
     <div className="page-wrap">
       <section style={{ minHeight: "100vh", display: "flex", alignItems: "flex-end", padding: "0 48px 80px", background: "var(--off-black)", position: "relative", overflow: "hidden" }}>
         <div style={{ position: "absolute", inset: 0, background: "linear-gradient(to top, var(--off-black) 45%, transparent)" }} />
-        <img src="/public/japankitchen.png" alt="Chef kitchen Tokyo" style={{ position: "absolute", inset: 0, width: "100%", height: "100%", objectFit: "cover", filter: "grayscale(100%)", opacity: 0.2 }} />
+        <img src="/japankitchen.png" alt="Chef kitchen Tokyo" style={{ position: "absolute", inset: 0, width: "100%", height: "100%", objectFit: "cover", filter: "grayscale(100%)", opacity: 0.2 }} />
         <div style={{ position: "relative", zIndex: 2, maxWidth: 680 }}>
           <span style={{ fontSize: 9, letterSpacing: "0.4em", color: "var(--muted)", textTransform: "uppercase", display: "block", marginBottom: 32 }}>{t.eyebrow}</span>
           <h1 className="serif" style={{ fontSize: "clamp(36px, 6vw, 82px)", fontWeight: 300, lineHeight: 1.05, marginBottom: 32 }}>
@@ -669,7 +669,7 @@ function MauiPage({ setPage, lang }) {
     <div className="page-wrap">
       <section style={{ minHeight: "85vh", display: "flex", alignItems: "flex-end", padding: "0 48px 80px", background: "var(--off-black)", position: "relative", overflow: "hidden" }}>
         <div style={{ position: "absolute", inset: 0, background: "linear-gradient(to top, var(--off-black) 50%, transparent)" }} />
-        <img src="/public/maui.png" alt="Maui" style={{ position: "absolute", inset: 0, width: "100%", height: "100%", objectFit: "cover", filter: "grayscale(100%)", opacity: 0.2 }} />
+        <img src="/maui.png" alt="Maui" style={{ position: "absolute", inset: 0, width: "100%", height: "100%", objectFit: "cover", filter: "grayscale(100%)", opacity: 0.2 }} />
         <div style={{ position: "relative", zIndex: 2, maxWidth: 680 }}>
           <span style={{ fontSize: 9, letterSpacing: "0.4em", color: "var(--muted)", textTransform: "uppercase", display: "block", marginBottom: 32 }}>{t.eyebrow}</span>
           <h1 className="serif" style={{ fontSize: "clamp(44px, 8vw, 96px)", fontWeight: 300, lineHeight: 0.95, marginBottom: 32 }}>
@@ -716,7 +716,7 @@ function AboutPage({ setPage, lang }) {
           <div style={{ position: "sticky", top: 120 }}>
             <FadeIn>
               <div style={{ aspectRatio: "2/3", background: "var(--charcoal)", overflow: "hidden", marginBottom: 24 }}>
-                <img src="/public/hero-revy.png" alt="Rebecca Hsiao" style={{ width: "100%", height: "100%", objectFit: "cover", objectPosition: "center top", filter: "grayscale(100%)", opacity: 0.6 }} />
+                <img src="/hero-revy.png" alt="Rebecca Hsiao" style={{ width: "100%", height: "100%", objectFit: "cover", objectPosition: "center top", filter: "grayscale(100%)", opacity: 0.6 }} />
               </div>
               <p style={{ fontSize: 10, letterSpacing: "0.3em", color: "var(--muted)", textTransform: "uppercase", lineHeight: 1.8 }}>
                 {t.nameLabel}<br />
