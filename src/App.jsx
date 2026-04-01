@@ -264,25 +264,23 @@ const GlobalStyle = () => (
     body {
       background: var(--black); color: var(--near-white);
       font-family: 'Montserrat', 'Noto Sans JP', sans-serif; font-weight: 300;
-      letter-spacing: 0.02em; cursor: none; overflow-x: hidden;
+      letter-spacing: 0.02em;  overflow-x: hidden;
     }
     body.lang-jp { font-family: 'Noto Sans JP', 'Montserrat', sans-serif; }
     ::selection { background: var(--near-white); color: var(--black); }
-    .cursor { position: fixed; width: 8px; height: 8px; background: var(--near-white); border-radius: 50%; pointer-events: none; z-index: 9999; transition: transform 0.15s ease; mix-blend-mode: difference; }
-    .cursor-ring { position: fixed; width: 36px; height: 36px; border: 1px solid rgba(232,232,232,0.4); border-radius: 50%; pointer-events: none; z-index: 9998; transition: transform 0.4s cubic-bezier(0.19,1,0.22,1); mix-blend-mode: difference; }
-    @media (hover: none) { .cursor, .cursor-ring { display: none; } body { cursor: auto; } }
+    @media (hover: none) { }
     .serif { font-family: 'Cormorant Garamond', 'Noto Serif JP', serif; }
     .italic { font-style: italic; }
     .rule { width: 100%; height: 1px; background: var(--charcoal); }
     .rule-sm { width: 40px; height: 1px; background: var(--dim); }
     nav { position: fixed; top: 0; left: 0; right: 0; z-index: 1000; display: flex; justify-content: space-between; align-items: center; padding: 28px 48px; mix-blend-mode: difference; }
-    .nav-logo { font-family: 'Montserrat', sans-serif; font-size: 11px; font-weight: 500; letter-spacing: 0.35em; color: var(--white); background: none; border: none; cursor: none; }
+    .nav-logo { font-family: 'Montserrat', sans-serif; font-size: 11px; font-weight: 500; letter-spacing: 0.35em; color: var(--white); background: none; border: none;}
     .nav-links { display: flex; gap: 28px; list-style: none; align-items: center; }
-    .nav-links button { background: none; border: none; cursor: none; font-family: 'Montserrat', 'Noto Sans JP', sans-serif; font-size: 10px; font-weight: 300; letter-spacing: 0.3em; color: var(--dim); text-transform: uppercase; transition: color 0.3s; }
+    .nav-links button { background: none; border: none;  font-family: 'Montserrat', 'Noto Sans JP', sans-serif; font-size: 10px; font-weight: 300; letter-spacing: 0.3em; color: var(--dim); text-transform: uppercase; transition: color 0.3s; }
     .nav-links button:hover { color: var(--white); }
-    .lang-toggle { background: none; border: 1px solid var(--muted); cursor: none; font-family: 'Montserrat', sans-serif; font-size: 9px; font-weight: 400; letter-spacing: 0.2em; color: var(--dim); padding: 4px 10px; transition: color 0.3s, border-color 0.3s; }
+    .lang-toggle { background: none; border: 1px solid var(--muted); font-family: 'Montserrat', sans-serif; font-size: 9px; font-weight: 400; letter-spacing: 0.2em; color: var(--dim); padding: 4px 10px; transition: color 0.3s, border-color 0.3s; }
     .lang-toggle:hover { color: var(--white); border-color: var(--silver); }
-    .hamburger { display: none; flex-direction: column; gap: 5px; background: none; border: none; cursor: none; padding: 4px; }
+    .hamburger { display: none; flex-direction: column; gap: 5px; background: none; border: none;  padding: 4px; }
     .hamburger span { display: block; width: 22px; height: 1px; background: var(--near-white); transition: all 0.3s; }
     .mobile-menu { display: none; position: fixed; inset: 0; background: var(--black); z-index: 999; flex-direction: column; justify-content: center; align-items: center; gap: 40px; }
     .mobile-menu.open { display: flex; }
@@ -291,9 +289,9 @@ const GlobalStyle = () => (
     section { padding: 120px 48px; }
     .page-wrap { opacity: 0; animation: pageIn 0.8s cubic-bezier(0.19,1,0.22,1) forwards; }
     @keyframes pageIn { from { opacity: 0; transform: translateY(12px); } to { opacity: 1; transform: translateY(0); } }
-    .btn-ghost { display: inline-flex; align-items: center; gap: 12px; background: none; border: none; cursor: none; font-family: 'Montserrat', 'Noto Sans JP', sans-serif; font-size: 10px; font-weight: 400; letter-spacing: 0.25em; text-transform: uppercase; color: var(--silver); padding: 0; padding-bottom: 6px; border-bottom: 1px solid var(--mid); transition: color 0.3s, border-color 0.3s, gap 0.3s; }
+    .btn-ghost { display: inline-flex; align-items: center; gap: 12px; background: none; border: none;  font-family: 'Montserrat', 'Noto Sans JP', sans-serif; font-size: 10px; font-weight: 400; letter-spacing: 0.25em; text-transform: uppercase; color: var(--silver); padding: 0; padding-bottom: 6px; border-bottom: 1px solid var(--mid); transition: color 0.3s, border-color 0.3s, gap 0.3s; }
     .btn-ghost:hover { color: var(--white); border-color: var(--silver); gap: 20px; }
-    .btn-solid { display: inline-block; background: var(--near-white); color: var(--black); font-family: 'Montserrat', 'Noto Sans JP', sans-serif; font-size: 10px; font-weight: 500; letter-spacing: 0.3em; text-transform: uppercase; padding: 16px 36px; border: none; cursor: none; transition: background 0.3s; }
+    .btn-solid { display: inline-block; background: var(--near-white); color: var(--black); font-family: 'Montserrat', 'Noto Sans JP', sans-serif; font-size: 10px; font-weight: 500; letter-spacing: 0.3em; text-transform: uppercase; padding: 16px 36px; border: none;  transition: background 0.3s; }
     .btn-solid:hover { background: var(--accent); }
     .tag { display: inline-block; font-size: 9px; font-weight: 400; letter-spacing: 0.25em; text-transform: uppercase; color: var(--muted); border: 1px solid var(--charcoal); padding: 5px 12px; }
     .grain::before { content: ''; position: fixed; inset: 0; background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.035'/%3E%3C/svg%3E"); pointer-events: none; z-index: 9990; opacity: 0.6; }
@@ -328,21 +326,6 @@ const GlobalStyle = () => (
     }
   `}</style>
 );
-
-/* ─── CURSOR ──────────────────────────────── */
-function Cursor() {
-  const dot = useRef(null);
-  const ring = useRef(null);
-  useEffect(() => {
-    const move = (e) => {
-      if (dot.current) { dot.current.style.left = e.clientX - 4 + "px"; dot.current.style.top = e.clientY - 4 + "px"; }
-      if (ring.current) { ring.current.style.left = e.clientX - 18 + "px"; ring.current.style.top = e.clientY - 18 + "px"; }
-    };
-    window.addEventListener("mousemove", move);
-    return () => window.removeEventListener("mousemove", move);
-  }, []);
-  return <><div className="cursor" ref={dot} /><div className="cursor-ring" ref={ring} /></>;
-}
 
 /* ─── NAV ─────────────────────────────────── */
 function Nav({ setPage, lang, setLang }) {
@@ -444,7 +427,7 @@ function HomePage({ setPage, lang }) {
         <div className="two-col">
           {t.exp.map((item) => (
             <FadeIn key={item.tag}>
-              <div onClick={() => setPage(item.page)} style={{ background: "var(--off-black)", padding: 52, display: "flex", flexDirection: "column", gap: 24, cursor: "none", transition: "background 0.3s", minHeight: 420 }} onMouseEnter={e => e.currentTarget.style.background = "var(--charcoal)"} onMouseLeave={e => e.currentTarget.style.background = "var(--off-black)"}>
+              <div onClick={() => setPage(item.page)} style={{ background: "var(--off-black)", padding: 52, display: "flex", flexDirection: "column", gap: 24, transition: "background 0.3s", minHeight: 420 }} onMouseEnter={e => e.currentTarget.style.background = "var(--charcoal)"} onMouseLeave={e => e.currentTarget.style.background = "var(--off-black)"}>
                 <span className="tag" style={{ alignSelf: "flex-start" }}>{item.tag}</span>
                 <h3 className="serif" style={{ fontSize: "clamp(28px, 3.5vw, 40px)", fontWeight: 300, lineHeight: 1.1, marginTop: "auto" }}>{item.title}</h3>
                 <p style={{ fontSize: 13, color: "var(--dim)", lineHeight: 1.8 }}>{item.desc}</p>
@@ -505,7 +488,7 @@ function TokyoPage({ setPage, lang }) {
         <div className="two-col">
           {t.exp.map((item) => (
             <FadeIn key={item.tag}>
-              <div onClick={() => setPage(item.page)} style={{ background: "var(--off-black)", padding: 52, display: "flex", flexDirection: "column", gap: 24, cursor: "none", transition: "background 0.3s", minHeight: 460 }} onMouseEnter={e => e.currentTarget.style.background = "var(--charcoal)"} onMouseLeave={e => e.currentTarget.style.background = "var(--off-black)"}>
+              <div onClick={() => setPage(item.page)} style={{ background: "var(--off-black)", padding: 52, display: "flex", flexDirection: "column", gap: 24, transition: "background 0.3s", minHeight: 460 }} onMouseEnter={e => e.currentTarget.style.background = "var(--charcoal)"} onMouseLeave={e => e.currentTarget.style.background = "var(--off-black)"}>
                 <span className="tag" style={{ alignSelf: "flex-start" }}>{item.tag}</span>
                 <h3 className="serif" style={{ fontSize: "clamp(26px, 3.5vw, 40px)", fontWeight: 300, lineHeight: 1.2, marginTop: "auto" }}>{item.title}</h3>
                 <p style={{ fontSize: 13, color: "var(--dim)", lineHeight: 1.8 }}>{item.body}</p>
@@ -817,7 +800,7 @@ function ContactPage({ setPage, lang }) {
                   <textarea value={formData.message} onChange={e => setFormData({ ...formData, message: e.target.value })} rows={5} style={{ ...inputStyle, resize: "none" }} onFocus={e => e.target.style.borderBottomColor = "var(--silver)"} onBlur={e => e.target.style.borderBottomColor = "var(--mid)"} />
                 </div>
                 {status === "error" && <p style={{ fontSize: 12, color: "#c0392b" }}>{t.error}</p>}
-                <button className="btn-solid" onClick={handleSubmit} style={{ alignSelf: "flex-start", cursor: "none", opacity: status === "sending" ? 0.5 : 1 }}>
+                <button className="btn-solid" onClick={handleSubmit} style={{ alignSelf: "flex-start",  opacity: status === "sending" ? 0.5 : 1 }}>
                   {status === "sending" ? t.sending : t.send}
                 </button>
               </div>
@@ -858,7 +841,6 @@ export default function App() {
   return (
     <>
       <GlobalStyle />
-      <Cursor />
       <Nav setPage={setPage} lang={lang} setLang={setLang} />
       <main style={{ paddingTop: 80 }}>{renderPage()}</main>
     </>
