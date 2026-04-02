@@ -323,6 +323,7 @@ const GlobalStyle = () => (
       .hero-copy { max-width: 100% !important; }
       .hero-grad { background: linear-gradient(to bottom, transparent 0%, var(--black) 70%) !important; }
       .maui-inner { grid-template-columns: 1fr !important; }
+      .about-photo { position: static !important; }
     }
   `}</style>
 );
@@ -696,7 +697,7 @@ function AboutPage({ setPage, lang }) {
     <div className="page-wrap">
       <section style={{ minHeight: "100vh", padding: "160px 48px 120px" }}>
         <div className="about-grid">
-          <div style={{ position: "sticky", top: 120 }}>
+          <div className="about-photo">
             <FadeIn>
               <div style={{ aspectRatio: "2/3", background: "var(--charcoal)", overflow: "hidden", marginBottom: 24 }}>
                 <img src="/hero-revy.png" alt="Rebecca Hsiao" style={{ width: "100%", height: "100%", objectFit: "cover", objectPosition: "center top", filter: "grayscale(100%)", opacity: 0.6 }} />
