@@ -267,6 +267,9 @@ const GlobalStyle = () => (
       letter-spacing: 0.02em;  overflow-x: hidden;
     }
     body.lang-jp { font-family: 'Noto Sans JP', 'Montserrat', sans-serif; }
+    body.lang-jp p { font-size: 16px !important; line-height: 2.2 !important; }
+    body.lang-jp label { font-size: 13px !important; letter-spacing: 0.1em !important; }
+    body.lang-jp .proof-label { font-size: 12px !important; letter-spacing: 0.1em !important; line-height: 1.6 !important; }
     ::selection { background: var(--near-white); color: var(--black); }
     @media (hover: none) { }
     .serif { font-family: 'Cormorant Garamond', 'Noto Serif JP', serif; }
